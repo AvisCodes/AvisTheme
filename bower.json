@@ -1,0 +1,23 @@
+{
+  "name": "AVIS",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "susy": "~2.2.6",
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "compass-mixins": "~1.0.2"
+  }
+}
