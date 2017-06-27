@@ -1,0 +1,47 @@
+// ---Libraries---
+
+// Docs: http://compass-style.org/examples/
+@import "../../bower_components/compass-mixins/lib/compass/reset";
+@import "../../bower_components/compass-mixins/lib/compass/css3";
+@import "../../bower_components/compass-mixins/lib/compass/utilities";
+
+// Video: http://susy.oddbird.net/demos/
+// Docs: http://susydocs.oddbird.net
+@import "../../bower_components/susy/sass/susy";
+
+// Docs: http://breakpoint-sass.com/
+@import "../../bower_components/compass-breakpoint/stylesheets/breakpoint";
+
+// ---Project breakpoints---
+$desktop: 1024px;
+$tablet: 641px 1023px;
+$mobile: 0 640px;
+
+$desktopMid: 1024px 1599px;
+$desktopSmall: 1024px 1366px;
+$tabletMid: 820px 1023px;
+
+$not-tablet: ($mobile) , ($desktop);
+$not-desktop: 0 1023px;
+$not-mobile: 641px;
+
+// ---Susy grid---
+$susy: (
+        container: 1200px,
+        columns: 12,
+        gutters: 1.5,
+        global-box-sizing: border-box,
+        debug: (
+                image: show, //for debug
+                color: red,
+        )
+);
+
+// ---Import sass partials---
+@import "mixins";
+@import "vars";
+@import "common";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "styles";

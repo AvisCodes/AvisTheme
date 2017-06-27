@@ -1,0 +1,72 @@
+body {
+  font: normal 15px/1.2 $tahoma;
+  background-color: #fff;
+  min-width: 320px;
+}
+
+.container {
+  @include clearfix;
+  @include container;
+  @include breakpoint (($tablet, $mobile)) {padding: 0 20px;}
+}
+
+.page-wrap {
+  min-height: 100vh;
+  margin-bottom: -$footer_height;
+}
+
+h1 {
+  font: bold 20px $tahoma;
+}
+
+a {
+  text-decoration: underline;
+  outline: none;
+  transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+header, section, footer, aside, article {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  &::selection {
+    background: #616D84; /* WebKit/Blink Browsers */
+    color: #fff;
+  }
+  &::-moz-selection {
+    background: #616D84; /* Gecko Browsers */
+    color: #fff;
+  }
+}

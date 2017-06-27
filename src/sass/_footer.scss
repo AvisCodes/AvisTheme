@@ -1,0 +1,10 @@
+//styles for footer
+.page-buffer {
+  height: $footer_height;
+}
+
+footer {
+  border: 1px solid $example_color;
+  height: $footer_height;
+  background: #eee;
+}

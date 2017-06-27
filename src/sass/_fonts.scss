@@ -1,0 +1,41 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/Custom-Font.eot');
+  src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Custom-Font.woff') format('woff'),
+  url('../fonts/Custom-Font.svg#custom_font') format('svg');
+  font-weight: normal;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/Custom-Font-Bold.eot');
+  src: url('../fonts/Custom-Font-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Custom-Font-Bold.woff') format('woff'),
+  url('../fonts/Custom-Font-Bold.svg#custom_font_bold') format('svg');
+  font-weight: bold;       // For bold width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+
+
+===Use examples===
+
+.example_normal {
+  font: 10px $CustomFont;
+}
+
+.example_bold {
+  font: bold 10px $CustomFont;
+}
+
+*/
+
+

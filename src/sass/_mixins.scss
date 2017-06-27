@@ -1,0 +1,38 @@
+//custom mixins
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin transitionAll($time) {
+  -moz-transition: all $time ease-in-out;
+  -webkit-transition: all $time ease-in-out;
+  transition: all $time ease-in-out;
+}
+
+@mixin inlineBlock {
+  display: inline-block;
+  white-space: normal;
+  word-spacing: normal;
+  vertical-align: top;
+}
+
+@mixin hideLinkText {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+
+  &:before {
+    text-indent: 0;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

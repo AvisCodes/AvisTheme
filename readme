@@ -1,0 +1,13 @@
+Avis Drupal 8 theme starter kit readme file.
+
+If u already don't have install these:
+
+ - node js with command "sudo apt-get install nodejs";
+ - npm with "sudo apt-get install npm";
+ - gulp with "sudo npm install gulp -g" or u may don't install it and use it locally with command "npm run gulp";
+ - bower "sudo npm install -g bower".
+
+After that run "npm install" and "bower install" in the directory with package.json and bower.json.
+
+And u ready to rock. Run "gulp"(or "npm run gulp" if u don't install gulp globally) for magic.
+You can see other gulp tasks in gulpfile.js.

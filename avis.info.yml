@@ -1,0 +1,5 @@
+name: 'AvisTheme'
+type: theme
+description: 'Avis Drupal 8 theme starter kit.'
+package: AVIS
+core: 8.x
